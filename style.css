@@ -26,7 +26,7 @@ body {
 }
 
 .background {
-    background: url('images/image.png') no-repeat center center/cover;
+    background: url('images/thebackground.png') no-repeat center center/cover;
     position: absolute;
     top: 0;
     left: 0;
@@ -296,4 +296,53 @@ input[type='text']:focus {
     cursor: pointer;
     padding: 0;
     margin: 0;
+}
+
+#logo1 {
+    width: 1000px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 5s linear, opacity 0.3s ease;
+    z-index: 99999999;
+}
+
+#logo2 {
+    scale: 1;
+    width: 150px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: scale 2s ease, opacity 0.3s ease;
+    z-index: 99999999;
+}
+
+#logo3 {
+    scale: 1;
+    width: 500px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: scale 2s ease, opacity 0.3s ease;
+    z-index: 99999999;
+}
+
+#launchbg {
+    background-color: white;
+    transition: 0.2s ease;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    scale: 111111%;
+    color: white;
 }
